@@ -1,0 +1,34 @@
+Name : Prathamesh M Wate
+
+Create a table 
+with (ID, Phy, Chem, Maths) with ID as primary key.
+Add another column Biology
+Create 4 records
+Change data for a record or two
+
+
+Find Operation
+    1. Find the ID with highest Phy score
+    2. Find the ID with highest total score
+Sorting Operations
+     3. Ascending order based on total score
+     4. Descending order based on total score
+
+
+5) ans-> create table marks(id int Primary Key, phy int, che int , maths int);
+i-alter table marks add biology int;
+ii-insert into table marks('phy','che','maths','biology') values(50,60,50,40);
+   insert into table marks('phy','che','maths','biology') values(70,60,50,80);
+   insert into table marks('phy','che','maths','biology') values(50,40,80,90);
+   insert into table marks('phy','che','maths','biology') values(30,70,40,40);
+
+iii) update table marks set phy=40 where Id=1;
+     update table marks set biology=90 where Id=2;
+
+6)ans->
+1)select MAX(phy) from marks ;
+2)select sum(phy,che,maths,bio) as 'Total' from marks; 
+3)select sum(phy,che,maths,bio) as 'Total' from marks order by Total;
+4)select sum(phy,che,maths,bio) as 'Total' from marks order by Total desc;
+
+
